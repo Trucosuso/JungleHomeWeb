@@ -1,0 +1,43 @@
+/* General styles */
+aside {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.aside-list {
+    padding: 0.8rem 0.5rem;
+}
+
+.aside-list > li {
+    padding: 0.2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.aside-list > li > ul {
+    width: 100%;
+}
+
+/* Mobile */
+
+.aside-list {
+    border-bottom: 2px solid #C5E1A5;
+}
+
+/* Tablet */
+@media screen and (min-width:576px){
+    
+}
+
+
+/* Desktop */
+@media screen and (min-width:768px){
+    .aside-list {
+        border: 1px solid #C5E1A5;
+    }
+
+    aside {
+        display: initial;
+    }
+}

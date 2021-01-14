@@ -1,0 +1,115 @@
+/* General styles */
+
+main{
+    width: 100%;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0.5rem;
+}
+
+.img-wide{
+    width: 100%;
+}
+
+
+/* Mobile */
+
+
+/* Tablet */
+@media screen and (min-width:576px){
+    main{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "img1 img1"
+                             "button1 button2"
+                             "img2 img3"
+                             "button3 button3"
+                             "img4 img5";
+    }
+
+    main > img:first-of-type{
+        grid-area: img1;
+    }
+    
+    main > a:first-of-type{
+        grid-area: button1;
+    }
+
+    
+    main > a:nth-of-type(2){
+        grid-area: button2;
+    }
+    
+    main > img:nth-of-type(2){
+        grid-area: img2;
+    }
+    
+    main > img:nth-of-type(3){
+        grid-area: img3;
+    }
+    
+    main > a:nth-of-type(3){
+        grid-area: button3;
+    }
+    
+    main > img:nth-of-type(4){
+        grid-area: img4;
+    }
+    
+    main > img:nth-of-type(5){
+        grid-area: img5;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width:768px){
+    main{
+        display: grid;
+        gap: 0.5rem 0;
+        grid-template-columns: 25% 15% 5% 10% 5% 15% 25%;
+        grid-template-areas: "img1 img1 img1 img1 img1 img1 img1"
+                             "button1 . button2 button2 button2 . button3"
+                             "img2 img2 img2 . img3 img3 img3"
+                             "img4 img4 img4 . img5 img5 img5";
+    }
+
+    main > img:first-of-type{
+        grid-area: img1;
+        order:1;
+    } 
+    
+    main > a:first-of-type{
+        grid-area: button1;
+        order:2;
+    }
+    
+    main > a:nth-of-type(2){
+        grid-area: button2;
+        order:3;
+    } 
+
+    main > a:nth-of-type(3){
+        grid-area: button3;
+        order:4;
+    } 
+    
+    main > img:nth-of-type(2){
+        grid-area: img2;
+        order:5;
+    }
+    
+    main > img:nth-of-type(3){
+        grid-area: img3;
+        order:6;
+    }
+    
+    
+    main > img:nth-of-type(4){
+        grid-area: img4;
+        order:7;
+    }
+    
+    main > img:nth-of-type(5){
+        grid-area: img5;
+        order:8;
+    }
+}

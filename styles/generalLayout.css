@@ -24,6 +24,7 @@ body > nav {
 body > main {
     width: 100%;
     max-width: 1320px;
+    display: grid;
 }
 
 body > footer {

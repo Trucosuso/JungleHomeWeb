@@ -30,6 +30,32 @@
     text-align: center;
 }
 
+.button-wide{
+    padding: 0.7rem 4rem;
+}
+
+.select {
+    font-size: inherit;
+    padding: 0.3em 1.4em 0.3em 0.3em;
+    border: 1px solid #C5E1A5;
+    border-radius: 0.3em;
+    appearance: none;
+    background-color: white;
+    /* Icon */
+    background-image: url("../images/down-arrow.svg");
+    background-repeat: no-repeat;
+    /* Icon position */
+    background-position: right 0.7em top 50%;
+    /* Icon size */
+    background-size: 0.65em auto;
+}
+
+.select:focus {
+    background-image: url("../images/up-arrow.svg");
+    border: 1px solid #212121;
+    outline: none;
+}
+
 .no-text-decoration{
     text-decoration: none;
 }
@@ -40,6 +66,7 @@ nav {
 
 .list {
     list-style: none;
+    margin: 0;
 }
 
 .nav-list > li:hover {
@@ -56,7 +83,34 @@ nav {
     padding-bottom: 0.2rem;
 }
 
+.icon {
+    height: 1rem;
+}
+
 .input {
     height: 2.2rem;
     font-family: FontAwesome;
+}
+
+.active {
+    background-color: #C5E1A5;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: 0.5rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    padding-right: 0.5rem;
+    color: darkgray;
+    content: ">";
 }

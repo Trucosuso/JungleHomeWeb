@@ -15,6 +15,13 @@ body > nav {
     padding: 0.3rem 1rem;
 }
 
+body > nav > section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+
 /* Mobile */
 
 
@@ -34,5 +41,7 @@ body > nav {
 
 /* Desktop */
 @media screen and (min-width:768px){
-
+    #aside-burger-menu {
+        display: none;
+    }
 }
