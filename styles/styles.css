@@ -1,0 +1,62 @@
+/* Colors */
+.text-green{
+    color: #C5E1A5;
+    fill: #C5E1A5;
+}
+
+.text-black{
+    color: #212121;
+    fill: #212121;
+}
+
+.text-white{
+    color: #FFFFFF;
+    fill: #FFFFFF;
+}
+
+.bg-green{
+    background-color: #C5E1A5;
+}
+
+.bg-black{
+    background-color: #212121;
+}
+
+/* Styles */
+.button {
+    text-decoration: none;
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
+.no-text-decoration{
+    text-decoration: none;
+}
+
+nav {
+    font-size: 1.2rem;
+}
+
+.nav-list, .information-list {
+    list-style: none;
+}
+
+.nav-list > li:hover {
+    background-color: #C5E1A5;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+.material-icons {
+    vertical-align: middle;
+    padding-bottom: 0.2rem;
+}
+
+.input {
+    height: 2.2rem;
+    font-family: FontAwesome;
+}

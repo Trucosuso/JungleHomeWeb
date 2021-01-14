@@ -1,0 +1,71 @@
+/* General styles */
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0.5rem;
+}
+
+header > section {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header > section  > * {
+    margin-right: 0.5rem;
+}
+
+/* Mobile */
+.logo {
+    display: none;
+}
+
+#mobile-search-bar {
+    margin: 0 0.5rem;
+}
+
+#global-search {
+    display: none;
+}
+
+/* Tablet */
+@media screen and (min-width:576px){
+    #global-search {
+        width: 13rem;
+        display: initial;
+    }
+
+    #burger-menu {
+        display: none;
+    }
+
+    #mobile-search-bar {
+        display:none;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width:768px){
+    .logo{
+        display: initial;
+    }
+
+    .smallLogo {
+        display: none;
+    }
+
+    #global-search {
+        width: 10vw;
+    }
+
+    #login-button:after {
+        content: " Login";
+    }
+
+    #join-us-button:after {
+        content: " Join Us";
+    }
+}

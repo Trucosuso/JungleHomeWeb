@@ -1,0 +1,39 @@
+/* General styles */
+nav {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.nav-list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list > li {
+    text-align: center;
+    padding: 0.3rem 1rem;
+}
+
+/* Mobile */
+
+
+/* Tablet */
+@media screen and (min-width:576px){
+    .nav-list {
+        display: flex;
+        flex-flow: row;
+    }
+
+    /* Te convence esto? es que lo tenía abierto cuando he cogido el PC y se me ha ocurrido ponerlo así */
+    .nav-list > li {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* Desktop */
+@media screen and (min-width:768px){
+
+}

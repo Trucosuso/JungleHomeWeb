@@ -1,0 +1,68 @@
+/* General styles */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    justify-items: center;
+    margin: 0;
+    width: 100%;
+    row-gap: 0.5rem;
+}
+
+header {
+    width: 100%;
+    max-width: 1320px;
+}
+
+nav {
+    width: 100%;
+    max-width: 1320px;
+}
+
+main {
+    width: 100%;
+    max-width: 1320px;
+}
+
+footer {
+    justify-self: stretch;
+}
+
+
+/* Mobile */
+body {
+    grid-template-areas:    "header"
+                            "nav"
+                            "main"
+                            "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Tablet */
+@media screen and (min-width:576px){
+
+
+}
+
+/* Desktop */
+@media screen and (min-width:760px){
+
+
+}
