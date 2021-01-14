@@ -1,5 +1,5 @@
 /* General styles */
-header {
+body > header {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -7,14 +7,14 @@ header {
     margin-left: 0.5rem;
 }
 
-header > section {
+body > header > section {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-evenly;
 }
 
-header > section  > * {
+body > header > section  > * {
     margin-right: 0.5rem;
 }
 

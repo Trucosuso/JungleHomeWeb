@@ -1,5 +1,5 @@
 /* General styles */
-nav {
+body > nav {
     display: flex;
     flex-flow: column nowrap;
 }
@@ -25,7 +25,6 @@ nav {
         flex-flow: row;
     }
 
-    /* Te convence esto? es que lo tenía abierto cuando he cogido el PC y se me ha ocurrido ponerlo así */
     .nav-list > li {
         display: flex;
         align-items: center;
