@@ -39,5 +39,6 @@ aside {
 
     aside {
         display: initial;
+        margin-left: 0.5rem;
     }
 }
