@@ -2,16 +2,95 @@
 
 /* Mobile */
 
+body{
+    min-height: 100vh;
+    grid-template-rows: auto auto 1fr auto;
+}
 
+ form{
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
+    grid-template-columns: 1fr;
+} 
+
+#data-user{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    justify-content: center;
+    grid-template-columns: 1fr;
+}
+#data-user > input, #data-user > select,form > textarea{
+    width: 100%;
+}
+
+#data-user > label{
+    justify-self: left;
+    margin-top: 0.7rem;
+}
+
+form > div{
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+}
+
+fieldset{
+    border: none;
+}
 
 
 /* Tablet */
 @media screen and (min-width:576px){
 
-}
+    #data-user{
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    } 
 
+    #data-user > label{
+        margin-top: 0;
+        width: 20%;
+    }
+
+    #data-user > input, #data-user>select{
+        width: 70%;
+    } 
+
+    form > textarea{
+        width: 73%;
+    }
+}
 
 /* Desktop */
 @media screen and (min-width:768px){
+    form{
+        border: 1px solid #C5E1A5;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "data-user textarea"
+                             "accept accept";
+    }
 
+    #data-user{
+        align-items: center;
+        grid-area: data-user;
+    }
+
+    form > textarea{
+        width: 100%;
+        grid-area: textarea;
+    }
+
+    form > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-area: accept;
+    }
 }

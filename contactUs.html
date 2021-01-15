@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/headerLayout.css">
     <link rel="stylesheet" href="styles/navLayout.css">
     <link rel="stylesheet" href="styles/footerLayout.css">
+    <link rel="stylesheet" href="styles/contactUs.css">
     
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/03c38d3f3c.js" crossorigin="anonymous"></script>
@@ -51,7 +52,7 @@
             
             <section role="menu">
                 <!-- Barra de búsqueda -->
-                <input class="input" type="search" name="global-search" id="global-search" placeholder="&#xf002; Search...">
+                <input class="search-input" type="search" name="global-search" id="global-search" placeholder="&#xf002; Search...">
 
                 <!-- Carrito -->
                 <a href="#">
@@ -76,7 +77,7 @@
 
     <nav>
         <!-- Barra de búsqueda pantalla pequeña -->
-        <input class="input" id="mobile-search-bar" style="font-family: FontAwesome;" type="search" name="mobile-search-bar" placeholder="&#xf002; Search...">
+        <input class="search-input" id="mobile-search-bar" style="font-family: FontAwesome;" type="search" name="mobile-search-bar" placeholder="&#xf002; Search...">
 
         <ul class="list nav-list">
             <li><a class="nav-link text-black" href="productList.html">Plants</a></li>
@@ -96,8 +97,31 @@
     </nav>
 
     <main>
-        <form action="">
-            
+        <form class="border-green" action="">
+            <section id="data-user">
+                <label for="subject">Subject:</label>
+                <select class="select border-black" name="subject" id="subject">
+                    <option value="Support">Support</option>
+                    <option value="billingAndPayments">Billing and payments</option>
+                    <option value="guaranteesAndReturns">Guarantees and returns</option>
+                </select>
+                <label for="email">Email:</label>
+                <input class="input border-black" id="email" type="email">
+                <label for="telf">Telf: </label>
+                <input class="input border-black" id="telf" type="tel">
+                <label for="order">Ref. Order:</label>
+                <input class="input border-black" id="order" type="text">
+                <label for="file">File:</label>
+                <input class="input border-black" id="file" type="file">
+            </section>
+            <textarea class="input border-black" name="comments" id="comments" cols="20" rows="8" placeholder="Comments ..."></textarea> 
+            <div>
+                <fieldset>
+                    <input class="checkbox" type="checkbox" value="accept">
+                    <label for="accept">I have read and accept the privacy policy.</label>
+                </fieldset>
+                <a href="contactUs.html" class="button text-black bg-green button-wide">Submit</a>
+            </div>
         </form>
     </main>
 
