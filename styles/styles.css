@@ -1,3 +1,8 @@
+@font-face{
+    font-family: "DejaVu Serif";
+    src:url("/fonts/DejaVuSerif.woff2");
+}
+
 /* Colors */
 .text-green{
     color: #C5E1A5;
@@ -23,6 +28,10 @@
 }
 
 /* Styles */
+body {
+    font-family: "DejaVu Serif", serif;
+}
+
 p {
     line-height: 1.5rem;
 }
@@ -60,6 +69,21 @@ p {
     outline: none;
 }
 
+.input {
+    font-size: inherit;
+    padding: 0.3em 1.4em 0.3em 0.3em;
+    border: 1px solid #C5E1A5;
+    border-radius: 0.3em;
+    appearance: none;
+    background-color: white;
+}
+
+.input:focus {
+    background-image: url("../images/up-arrow.svg");
+    border: 1px solid #212121;
+    outline: none;
+}
+
 .no-text-decoration{
     text-decoration: none;
 }
@@ -91,7 +115,7 @@ nav {
     height: 1rem;
 }
 
-.input {
+.search-input {
     height: 2.2rem;
     font-family: FontAwesome;
 }
