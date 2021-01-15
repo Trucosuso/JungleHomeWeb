@@ -30,7 +30,11 @@ main > section{
 }
 
 #short-description > p{
-    margin:0;
+    margin:0 0.5rem;
+}
+
+#large-description > p{
+    margin:1rem 0.5rem;
 }
 
 
