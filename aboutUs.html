@@ -12,12 +12,27 @@
     <link rel="stylesheet" href="styles/headerLayout.css">
     <link rel="stylesheet" href="styles/navLayout.css">
     <link rel="stylesheet" href="styles/footerLayout.css">
+    <link rel="stylesheet" href="styles/aboutUs.css">
+
     
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/03c38d3f3c.js" crossorigin="anonymous"></script>
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <script src="JS/map.js"></script>
+
 </head>
 
 <body>
@@ -95,8 +110,30 @@
         </section>
     </nav>
 
-    <main style="height: 800px;">
-        ASDFDDSAF
+    <main>
+        <img src="images/rajoy.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Fusce vitae nisl quam. Vestibulum leo quam, vehicula nec
+            nibh eu, accumsan condimentum neque. Donec vestibulum
+            eleifend ipsum vel pulvinar. Curabitur interdum augue non
+            nisi mattis maximus. Duis volutpat ultrices tincidunt. Cras
+            feugiat massa ac condimentum interdum. Praesent pharetra
+            sodales magna a venenatis. Sed pellentesque porta posuere.
+            Aliquam fringilla pharetra ex, eget feugiat ipsum vulputate
+            ac.</p>
+            <div id="map"></div>
+            <section>
+                <h4>Contact Us</h4>
+                <div>
+                    <p>Adress: Avenida Francisco Ayala</p>
+                    <p>City: Granada (Spain)</p>
+                    <p>Email: junglehome@email.com</p>
+                    <p>Tel.: 5467359649</p>
+                    <p>Fax: 5315446574</p>
+                    <p>Schedule: L-V 10:00 - 20:00</p>
+                </div>
+                <a href="#" class="button text-black bg-green">Contact form</a>
+            </section>
     </main>
 
 
