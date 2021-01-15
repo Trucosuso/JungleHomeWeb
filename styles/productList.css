@@ -19,7 +19,6 @@ main > section {
 }
 
 .order-chooser {
-    /* padding-left: 0.5rem; */
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -49,6 +48,16 @@ main > section {
 
 /* Tablet */
 @media screen and (min-width:576px){
+    .order-chooser {
+        justify-content: flex-start;
+        padding-left: 2rem;
+    }
+    
+    .order-chooser > select {
+        width: 15rem;
+        margin-left: 0.5rem;
+    }
+
     .product-list {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem 1rem;
@@ -66,6 +75,7 @@ main > section {
     .product-list {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem 1rem;
+        margin-right: 0.5rem;
     }
 }
 
