@@ -3,7 +3,6 @@
 /* Mobile */
 
 main{
-    display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
@@ -19,7 +18,7 @@ main > img{
     width: 100%;
 }
 
-main > p{
+main > #short-description, main > #large-description{
     width: 100%;
 }
 
@@ -30,13 +29,18 @@ main > section{
     align-items: center;
 }
 
+#short-description > p{
+    margin:0;
+}
+
 
 /* Tablet */
 @media screen and (min-width:576px){
     main{
         grid-template-columns: repeat(2,1fr);
         align-items: initial;
-        grid-template-areas: "img information"
+        grid-template-areas: "img short-description"
+                             "large-description large-description" 
                              "map map"
                              "contact contact";
     }
@@ -45,8 +49,11 @@ main > section{
         grid-area: img;
     }
 
-    main > p{
-        grid-area: information;
+    main > #short-description{
+        grid-area: short-description;
+    }
+    main > #large-description{
+        grid-area: large-description;
     }
 
     #map{
@@ -67,11 +74,11 @@ main > section{
     main{
         gap: 1.2rem;
         grid-template-columns: repeat(2,fr);
-        grid-template-rows: 30% 15% auto; 
+        grid-template-rows:repeat(3,auto); 
         grid-template-areas: "img map"
-                             "information map"
-                             "information contact";
-    }
+                             "short-description map"
+                             "large-description contact";
+    }    
 
     #map{
         height: 100%;
