@@ -11,6 +11,12 @@ body {
     row-gap: 0.5rem;
 }
 
+/* Comprobar cuando terminemos todo */
+/* body{
+    min-height: 100vh;
+    grid-template-rows: auto auto 1fr auto;
+} */
+
 body > header {
     width: 100%;
     max-width: 1320px;
