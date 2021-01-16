@@ -55,9 +55,12 @@ p {
 }
 
 .input:focus {
-    background-image: url("../images/up-arrow.svg");
     border: 1px solid #212121;
     outline: none;
+}
+
+input:invalid {
+    border-color: red;
 }
 
 .checkbox{

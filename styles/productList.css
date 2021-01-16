@@ -7,6 +7,10 @@ main > section {
     display: grid;
 }
 
+.product-image {
+    max-height: 50vh;
+}
+
 /* Mobile */
 main > section {
     grid-template-columns: 1fr;
@@ -43,6 +47,7 @@ main > section {
 .product-image {
     width: 100%;
     margin: 0;
+    object-fit: cover;
 }
 
 
