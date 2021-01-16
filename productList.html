@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/footerLayout.css">
     <link rel="stylesheet" href="styles/aside.css">
     <link rel="stylesheet" href="styles/productList.css">
+    <link rel="stylesheet" href="styles/loginRegister.css">
     
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/03c38d3f3c.js" crossorigin="anonymous"></script>
@@ -26,6 +27,7 @@
 
     <!-- JS -->
     <script src="JS/collapseButtons.js"></script>
+    <script src="JS/modal.js"></script>
 </head>
 
 <body>
@@ -110,6 +112,10 @@
     </nav>
 
     <main>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal"></div>
+
         <aside class="hidden-md">
             <ul class="list aside-list">
                 <li>Flowers <img class="icon" src="images/down-arrow.svg" alt="expand"></li>
@@ -142,81 +148,161 @@
             <div class="product-list">
                 <div class="product-container">
                     <a class="product text-black" href="productDetail.html">
-                        <img class="product-image" src="images/rajoy.jpg" alt="Rajoy">
+                        <img class="product-image" src="images/plants/monstera1.jpg" alt="Monstera Deliciosa">
 
-                        <p class="product-title">Mariano Rajoy Brey</p>
+                        <p class="product-title">Monstera deliciosa</p>
 
-                        <p class="product-price">29.99 €</p>
+                        <p class="product-price">19.99 €</p>
                     </a>
                 </div>
 
                 <div class="product-container">
                     <a class="product text-black" href="productDetail.html">
-                        <img class="product-image" src="images/rajoy.jpg" alt="Rajoy">
+                        <img class="product-image" src="images/plants/succulent1.jpg" alt="Aristaloe Aristata">
 
-                        <p class="product-title">Mariano Rajoy Brey</p>
+                        <p class="product-title">Aristaloe Aristata</p>
 
-                        <p class="product-price">29.99 €</p>
+                        <p class="product-price">6.20 €</p>
                     </a>
                 </div>
 
                 <div class="product-container">
                     <a class="product text-black" href="productDetail.html">
-                        <img class="product-image" src="images/rajoy.jpg" alt="Rajoy">
+                        <img class="product-image" src="images/plants/bonsai2.jpg" alt="Bonsai Mediano">
 
-                        <p class="product-title">Mariano Rajoy Brey</p>
+                        <p class="product-title">Bonsai Mediano</p>
 
-                        <p class="product-price">29.99 €</p>
+                        <p class="product-price">39.99 €</p>
                     </a>
                 </div>
 
                 <div class="product-container">
                     <a class="product text-black" href="productDetail.html">
-                        <img class="product-image" src="images/rajoy.jpg" alt="Rajoy">
+                        <img class="product-image" src="images/plants/monstera2.jpg" alt="Monstera tacanaensis">
 
-                        <p class="product-title">Mariano Rajoy Brey</p>
+                        <p class="product-title">Monstera tacanaensis</p>
 
-                        <p class="product-price">29.99 €</p>
+                        <p class="product-price">14.35 €</p>
                     </a>
                 </div>
 
                 <div class="product-container">
                     <a class="product text-black" href="productDetail.html">
-                        <img class="product-image" src="images/rajoy.jpg" alt="Rajoy">
+                        <img class="product-image" src="images/plants/bonsai1.jpg" alt="Bonsai Grande">
 
-                        <p class="product-title">Mariano Rajoy Brey</p>
+                        <p class="product-title">Bonsai Grande</p>
 
-                        <p class="product-price">29.99 €</p>
+                        <p class="product-price">75.00 €</p>
                     </a>
                 </div>
 
                 <div class="product-container">
                     <a class="product text-black" href="productDetail.html">
-                        <img class="product-image" src="images/rajoy.jpg" alt="Rajoy">
+                        <img class="product-image" src="images/plants/succulent2.jpg" alt="Crassula ovata gollum">
 
-                        <p class="product-title">Mariano Rajoy Brey</p>
+                        <p class="product-title">Crassula ovata gollum</p>
 
-                        <p class="product-price">29.99 €</p>
+                        <p class="product-price">4.65 €</p>
                     </a>
                 </div>
 
                 <div class="product-container">
                     <a class="product text-black" href="productDetail.html">
-                        <img class="product-image" src="images/rajoy.jpg" alt="Rajoy">
+                        <img class="product-image" src="images/plants/monstera3.jpg" alt="Monstera borsigiana">
 
-                        <p class="product-title">Mariano Rajoy Brey</p>
+                        <p class="product-title">Monstera borsigiana</p>
 
-                        <p class="product-price">29.99 €</p>
+                        <p class="product-price">19.99 €</p>
                     </a>
                 </div>
 
                 <div class="product-container">
                     <a class="product text-black" href="productDetail.html">
-                        <img class="product-image" src="images/rajoy.jpg" alt="Rajoy">
+                        <img class="product-image" src="images/plants/succulent3.jpg" alt="Surtido suculentos">
 
-                        <p class="product-title">Mariano Rajoy Brey</p>
+                        <p class="product-title">Surtido suculentos</p>
 
-                        <p class="product-price">29.99 €</p>
+                        <p class="product-price">15.00 €</p>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a class="product text-black" href="productDetail.html">
+                        <img class="product-image" src="images/plants/monstera1.jpg" alt="Monstera Deliciosa">
+
+                        <p class="product-title">Monstera deliciosa</p>
+
+                        <p class="product-price">19.99 €</p>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a class="product text-black" href="productDetail.html">
+                        <img class="product-image" src="images/plants/succulent1.jpg" alt="Aristaloe Aristata">
+
+                        <p class="product-title">Aristaloe Aristata</p>
+
+                        <p class="product-price">6.20 €</p>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a class="product text-black" href="productDetail.html">
+                        <img class="product-image" src="images/plants/monstera2.jpg" alt="Monstera tacanaensis">
+
+                        <p class="product-title">Monstera tacanaensis</p>
+
+                        <p class="product-price">14.35 €</p>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a class="product text-black" href="productDetail.html">
+                        <img class="product-image" src="images/plants/bonsai2.jpg" alt="Bonsai Mediano">
+
+                        <p class="product-title">Bonsai Mediano</p>
+
+                        <p class="product-price">39.99 €</p>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a class="product text-black" href="productDetail.html">
+                        <img class="product-image" src="images/plants/succulent2.jpg" alt="Crassula ovata gollum">
+
+                        <p class="product-title">Crassula ovata gollum</p>
+
+                        <p class="product-price">4.65 €</p>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a class="product text-black" href="productDetail.html">
+                        <img class="product-image" src="images/plants/bonsai1.jpg" alt="Bonsai Grande">
+
+                        <p class="product-title">Bonsai Grande</p>
+
+                        <p class="product-price">75.00 €</p>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a class="product text-black" href="productDetail.html">
+                        <img class="product-image" src="images/plants/succulent3.jpg" alt="Surtido suculentos">
+
+                        <p class="product-title">Surtido suculentos</p>
+
+                        <p class="product-price">15.00 €</p>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a class="product text-black" href="productDetail.html">
+                        <img class="product-image" src="images/plants/monstera3.jpg" alt="Monstera borsigiana">
+
+                        <p class="product-title">Monstera borsigiana</p>
+
+                        <p class="product-price">19.99 €</p>
                     </a>
                 </div>
             </div>
