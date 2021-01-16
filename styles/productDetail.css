@@ -27,7 +27,11 @@ h1, h1, h3, h4, h5, h6 {
 }
 
 .nav-link {
-    padding: 0;
+    padding: initial;
+}
+
+dl, ol, ul {
+    margin-top: 1rem;
 }
 
 
