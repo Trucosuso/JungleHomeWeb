@@ -21,8 +21,30 @@ ul a:hover {
     color: initial;
 }
 
+h1, h1, h3, h4, h5, h6 {
+    font-weight: initial;
+    line-height: initial;
+}
+
+.nav-link {
+    padding: 0;
+}
+
 
 /* General styles */
+p {
+    margin: 0 1.5rem;
+}
+
+h1, h1, h3, h4, h5, h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+main {
+    margin-bottom: 1rem;
+}
+
 main > section {
     width: 100vw;
     display: grid;
@@ -41,9 +63,40 @@ main > section {
     margin: 0;
 }
 
+#plant-care > h1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+#related-products {
+    display: grid;
+}
+
+.horizontal-card {
+    display: grid;
+    text-decoration: none;
+    color: black;
+}
+
+.horizontal-card:hover {
+    color: black;
+}
+
+#related-products > h1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
 /* Mobile */
 #product {
     justify-items: center;
+    gap: 1.5rem 0;
 }
 
 #product-controls {
@@ -52,7 +105,7 @@ main > section {
                             "button button";
     justify-items: center;
     align-items: center;
-    gap: 0.5rem 0;
+    gap: 1.5rem 0;
 }
 
 #product-quantity {
@@ -64,65 +117,66 @@ main > section {
     grid-area: button;
 }
 
-
-
-
-
-#
-/* main > section {
-    grid-template-columns: 1fr;
-    gap: 1rem 0;
+#related-products {
+    gap: 1rem;
+    grid-template-rows: auto;
+    grid-auto-rows: 1fr;
 }
 
-.product-list {
-    grid-template-columns: 1fr;
-    gap: 1rem 0;
+#related-products > h1 {
+    text-align: center;
 }
 
-.order-chooser {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.order-chooser > select {
-    width: 70%;
-}
-
-.product {
-    text-decoration: none;
-    display: flex;
-    flex-flow: column nowrap;
+.horizontal-card {
+    grid-template-columns: 35% 1fr;
+    justify-content: space-evenly;
+    gap: 1.5rem;
     align-items: center;
 }
 
-.product > * {
-    margin: 0.3rem 0;
-}
-
-.product-image {
+.horizontal-card > img {
     width: 100%;
+    margin-left: 0.5rem;
+}
+
+.horizontal-card > p {
     margin: 0;
-} */
+}
 
 
 /* Tablet */
 @media screen and (min-width:576px){
-    /* .order-chooser {
-        justify-content: flex-start;
-        padding-left: 2rem;
-    }
-    
-    .order-chooser > select {
-        width: 15rem;
-        margin-left: 0.5rem;
+    main > section {
+        gap: 1rem 0.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:    "carousel         product"
+                                "plant-care       plant-care"
+                                "related-products related-products";
     }
 
-    .product-list {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem 1rem;
-    } */
+    #plant-care {
+        grid-area: plant-care;
+    }
+
+    #related-products {
+        grid-area: related-products;
+    }
+
+    .horizontal-card {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 70vw;
+    }
+
+    #product-title {
+        text-align: center;
+        margin-right: 0.5rem;
+    }
+
+    #product-quantity {
+        justify-self: end;
+        width: 70%;
+    }
 }
 
 
@@ -132,18 +186,9 @@ main > section {
         grid-template-columns: 20% 1fr;
         gap: 0 1rem;
     }
-
-    /* .product-list {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem 1rem;
-        margin-right: 0.5rem;
-    } */
 }
 
 /* Big desktop */
 @media screen and (min-width:992px){
-    /* .product-list {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem 1rem;
-    } */
+    
 }
