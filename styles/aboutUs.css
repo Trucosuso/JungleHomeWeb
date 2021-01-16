@@ -6,7 +6,7 @@ main{
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 #map{
@@ -30,11 +30,11 @@ main > section{
 }
 
 #short-description > p{
-    margin:0 0.5rem;
+    margin:0 1.5rem;
 }
 
 #large-description > p{
-    margin:1rem 0.5rem;
+    margin:1rem 1.5rem;
 }
 
 
