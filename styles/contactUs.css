@@ -7,12 +7,13 @@ body{
     grid-template-rows: auto auto 1fr auto;
 }
 
- form{
+form{
     display: grid;
     gap: 1rem;
     padding: 1rem;
     justify-items: center;
     grid-template-columns: 1fr;
+    align-self: center;
 } 
 
 #data-user{
@@ -37,10 +38,6 @@ form > div{
     gap: 1rem;
     align-items: center;
     justify-items: center;
-}
-
-fieldset{
-    border: none;
 }
 
 
@@ -74,6 +71,7 @@ fieldset{
         grid-template-columns: repeat(2,1fr);
         grid-template-areas: "data-user textarea"
                              "accept accept";
+        max-height: 500px;
     }
 
     #data-user{
