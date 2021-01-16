@@ -102,6 +102,10 @@ nav {
     cursor: pointer;
 }
 
+.icon-big {
+    height: 1.5rem;
+}
+
 .search-input {
     height: 2.2rem;
     font-family: FontAwesome;
