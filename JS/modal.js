@@ -29,7 +29,7 @@ function register(){
         .append($("<label for='accept'>I have read and accept the privacy policy.</label>"));
 
     let form = $("<form action=''</form>")
-        .append($("<input class='input border-black' type='email' placeholder='Email'>"))
+        .append($("<input class='input border-black' type='email' placeholder='Email' pattern='^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'>"))
         .append($("<input class='input border-black' type='password' placeholder='Password'>"))
         .append($("<input class='input border-black' type='password' placeholder='Confirm Password'>"))
         .append($(fieldset))
@@ -64,7 +64,7 @@ function login(){
         .append($("<label for='accept'>I have read and accept the privacy policy.</label>"));
 
     let form = $("<form action=''></form>")
-        .append($("<input class='input border-black' type='email' placeholder='Email'>"))
+        .append($("<input class='input border-black' type='email' placeholder='Email' pattern='^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'>"))
         .append($("<input class='input border-black' type='password' placeholder='Password'>"))
         .append($("<a id='forgotPassword? class='text-black' href='#'>Forgot your password?</a>"))
         .append($("<a href='#' class='button text-black bg-green button-wide'>Sing Up</a>"));
