@@ -53,6 +53,7 @@ main > section {
 
 #product {
     display: grid;
+    grid-auto-rows: auto;
 }
 
 #product-controls {
@@ -96,7 +97,7 @@ main > section {
 /* Mobile */
 #product {
     justify-items: center;
-    gap: 1.5rem 0;
+    gap: 1rem 0;
 }
 
 #product-controls {
@@ -106,6 +107,7 @@ main > section {
     justify-items: center;
     align-items: center;
     gap: 1.5rem 0;
+    grid-row-start: 3;
 }
 
 #product-quantity {
@@ -171,6 +173,8 @@ main > section {
     #product-title {
         text-align: center;
         margin-right: 0.5rem;
+        display: flex;
+        align-items: center;
     }
 
     #product-quantity {
@@ -186,9 +190,29 @@ main > section {
         grid-template-columns: 20% 1fr;
         gap: 0 1rem;
     }
-}
 
-/* Big desktop */
-@media screen and (min-width:992px){
-    
+    main > section {
+        width: initial;
+    }
+
+    #product-controls {
+        grid-row-start: 2;
+    }
+
+    #related-products {
+        grid-template-rows: auto 1fr;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #related-products > h1 {
+        grid-column-start: span 4;
+    }
+
+    .horizontal-card {
+        width: unset;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, auto;
+        justify-items: center;
+        gap: 0.5rem;
+    }
 }
