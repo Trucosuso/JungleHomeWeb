@@ -20,6 +20,12 @@
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="JS/collapseButtons.js"></script>
 </head>
 
 <body>
@@ -72,6 +78,7 @@
                 <!-- Menu hamburguesa -->
                 <svg id="burger-menu" class="text-black" width="1.5rem" height="1.5rem" viewBox="0 0 24 24">
                     <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                    <path style="display: none;" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
                 </svg>
             </section>
     </header>
@@ -80,7 +87,7 @@
         <!-- Barra de búsqueda pantalla pequeña -->
         <input class="search-input" id="mobile-search-bar" style="font-family: FontAwesome;" type="search" name="mobile-search-bar" placeholder="&#xf002; Search...">
 
-        <ul class="list nav-list">
+        <ul id="navMenu" class="list nav-list hidden-sm">
             <li class="active"><a class="nav-link text-black" href="productList.html">Plants</a></li>
             <li><a class="nav-link text-black" href="productList.html">Flowers</a></a></li>
             <li><a class="nav-link text-black" href="productList.html">Pots</a></a></li>
@@ -97,12 +104,13 @@
             <!-- Menu hamburguesa -->
             <svg id="aside-burger-menu" class="text-black" width="1.5rem" height="1.5rem" viewBox="0 0 24 24">
                 <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                <path style="display: none;" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
             </svg>
         </section>
     </nav>
 
     <main>
-        <aside>
+        <aside class="hidden-md">
             <ul class="list aside-list">
                 <li>Flowers <img class="icon" src="images/down-arrow.svg" alt="expand"></li>
                 <li>Garden accesories <img class="icon" src="images/down-arrow.svg" alt="expand"></li>

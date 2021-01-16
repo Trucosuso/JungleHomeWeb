@@ -66,6 +66,10 @@ p {
     /* border-radius: 0.3em; */
 }
 
+fieldset{
+    border: none;
+}
+
 .no-text-decoration{
     text-decoration: none;
 }
@@ -95,6 +99,7 @@ nav {
 
 .icon {
     height: 1rem;
+    cursor: pointer;
 }
 
 .search-input {
@@ -155,4 +160,22 @@ nav {
 
 .border-green {
     border-color: #C5E1A5;
+}
+
+.hidden-sm {
+    display: none;
+}
+@media screen and (min-width:576px){
+    .hidden-sm {
+        display: unset;
+    }
+}
+
+.hidden-md {
+    display: none;
+}
+@media screen and (min-width:768px){
+    .hidden-md {
+        display: unset;
+    }
 }
