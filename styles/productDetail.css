@@ -1,4 +1,4 @@
-/* Disable some bootstrap */
+/* Disable some bootstrap styles */
 button, input, optgroup, select, textarea {
     font-family:initial;
     font-size:initial;
@@ -50,18 +50,24 @@ main {
 }
 
 main > section {
-    width: 100vw;
     display: grid;
-    gap: 1rem 0;
 }
 
 #product {
     display: grid;
     grid-auto-rows: auto;
+    justify-items: center;
+    gap: 1rem 0;
 }
 
 #product-controls {
     display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:    "input  price"
+                            "button button";
+    justify-items: center;
+    align-items: center;
+    gap: 1.5rem 0;
 }
 
 #product-price {
@@ -71,6 +77,7 @@ main > section {
 #plant-care > h1 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -79,6 +86,7 @@ main > section {
 
 #related-products {
     display: grid;
+    gap: 1rem;
 }
 
 .horizontal-card {
@@ -91,55 +99,6 @@ main > section {
     color: black;
 }
 
-#related-products > h1 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.4rem;
-}
-
-/* Mobile */
-#product {
-    justify-items: center;
-    gap: 1rem 0;
-}
-
-#product-controls {
-    grid-template-columns: 50% 50%;
-    grid-template-areas:    "input  price"
-                            "button button";
-    justify-items: center;
-    align-items: center;
-    gap: 1.5rem 0;
-    grid-row-start: 3;
-}
-
-#product-quantity {
-    width: 100%;
-    padding-right: 0.2rem;
-}
-
-#add-to-cart {
-    grid-area: button;
-}
-
-#related-products {
-    gap: 1rem;
-    grid-template-rows: auto;
-    grid-auto-rows: 1fr;
-}
-
-#related-products > h1 {
-    text-align: center;
-}
-
-.horizontal-card {
-    grid-template-columns: 35% 1fr;
-    justify-content: space-evenly;
-    gap: 1.5rem;
-    align-items: center;
-}
-
 .horizontal-card > img {
     width: 100%;
     margin-left: 0.5rem;
@@ -149,6 +108,47 @@ main > section {
     margin: 0;
 }
 
+#related-products > h1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#product-quantity {
+    padding-right: 0.2rem;
+}
+
+#add-to-cart {
+    grid-area: button;
+}
+
+/* Mobile */
+main > section {
+    gap: 1rem 0;
+    width: 100vw;
+}
+
+#product-controls {
+    grid-row-start: 3;
+}
+
+#product-quantity {
+    width: 100%;
+}
+
+#related-products {
+    grid-template-rows: auto;
+    grid-auto-rows: 1fr;
+}
+
+.horizontal-card {
+    grid-template-columns: 35% 1fr;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    align-items: center;
+}
 
 /* Tablet */
 @media screen and (min-width:576px){

@@ -18,13 +18,13 @@ body > header > section  > * {
     margin-right: 0.5rem;
 }
 
+#mobile-search-bar {
+    margin: 0 0.5rem;
+}
+
 /* Mobile */
 .logo {
     display: none;
-}
-
-#mobile-search-bar {
-    margin: 0 0.5rem;
 }
 
 #global-search {

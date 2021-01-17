@@ -1,6 +1,8 @@
 /* General styles */
 main > section {
     display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem 0;
 }
 
 .product-list {
@@ -11,26 +13,10 @@ main > section {
     max-height: 50vh;
 }
 
-/* Mobile */
-main > section {
-    grid-template-columns: 1fr;
-    gap: 1rem 0;
-}
-
-.product-list {
-    grid-template-columns: 1fr;
-    gap: 1rem 0;
-}
-
 .order-chooser {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-around;
-}
-
-.order-chooser > select {
-    width: 70%;
 }
 
 .product {
@@ -50,6 +36,19 @@ main > section {
     object-fit: cover;
 }
 
+/* Mobile */
+.product-list {
+    grid-template-columns: 1fr;
+    gap: 1rem 0;
+}
+
+.order-chooser {
+    justify-content: space-around;
+}
+
+.order-chooser > select {
+    width: 70%;
+}
 
 /* Tablet */
 @media screen and (min-width:576px){

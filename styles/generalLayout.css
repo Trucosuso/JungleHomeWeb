@@ -9,37 +9,6 @@ body {
     margin: 0;
     width: 100%;
     row-gap: 0.5rem;
-}
-
-/* Comprobar cuando terminemos todo */
-/* body{
-    min-height: 100vh;
-    grid-template-rows: auto auto 1fr auto;
-} */
-
-body > header {
-    width: 100%;
-    max-width: 1320px;
-}
-
-body > nav {
-    width: 100%;
-    max-width: 1320px;
-}
-
-body > main {
-    width: 100%;
-    max-width: 1320px;
-    display: grid;
-}
-
-body > footer {
-    justify-self: stretch;
-}
-
-
-/* Mobile */
-body {
     grid-template-areas:    "header"
                             "nav"
                             "main"
@@ -47,29 +16,37 @@ body {
 }
 
 body > header {
+    width: 100%;
+    max-width: 1320px;
     grid-area: header;
 }
 
 body > nav {
+    width: 100%;
+    max-width: 1320px;
     grid-area: nav;
 }
 
 body > main {
+    width: 100%;
+    max-width: 1320px;
+    display: grid;
     grid-area: main;
 }
 
 body > footer {
+    justify-self: stretch;
     grid-area: footer;
 }
 
+/* Mobile */
+
 /* Tablet */
 @media screen and (min-width:576px){
-
 
 }
 
 /* Desktop */
 @media screen and (min-width:760px){
-
 
 }

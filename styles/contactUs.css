@@ -1,39 +1,48 @@
 /* General styles */
-
-/* Mobile */
-
-body{
+body {
     min-height: 100vh;
     grid-template-rows: auto auto 1fr auto;
 }
 
-main > form{
+main > form {
     display: grid;
     gap: 1rem;
     padding: 1rem;
     justify-items: center;
-    grid-template-columns: 1fr;
-    align-self: center;
+    align-self: center; 
 } 
 
-#data-user{
+#data-user {
     display: flex;
-    flex-direction: column;
-    width: 100%;
     gap: 0.5rem;
     justify-content: center;
-    grid-template-columns: 1fr;
-}
-#data-user > input, #data-user > select,form > textarea{
-    width: 100%;
 }
 
-#data-user > label{
+#data-user > label {
     justify-self: left;
     margin-top: 0.7rem;
 }
 
-main > form > div{
+main > form {
+    border: 1px solid;
+}
+
+/* Mobile */
+#data-user {
+    flex-direction: column;
+    width: 100%;
+    grid-template-columns: 1fr;
+}
+
+main > form {
+    grid-template-columns: 1fr;
+}
+
+#data-user > input, #data-user > select,form > textarea {
+    width: 100%;
+}
+
+main > form > div {
     display: grid;
     gap: 1rem;
     align-items: center;
@@ -42,49 +51,49 @@ main > form > div{
 
 
 /* Tablet */
-@media screen and (min-width:576px){
+@media screen and (min-width:576px) {
 
-    #data-user{
+    #data-user {
         width: 80%;
         flex-direction: row;
         flex-wrap: wrap;
     } 
 
-    #data-user > label{
+    #data-user > label {
         margin-top: 0;
         width: 20%;
     }
 
-    #data-user > input, #data-user>select{
+    #data-user > input, #data-user>select {
         width: 70%;
     } 
 
-    main > form > textarea{
+    main > form > textarea {
         width: 73%;
     }
+
 }
 
 /* Desktop */
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
     main > form{
-        border: 1px solid #C5E1A5;
         grid-template-columns: repeat(2,1fr);
         grid-template-areas: "data-user textarea"
                              "accept accept";
         max-height: 500px;
     }
 
-    #data-user{
+    #data-user {
         align-items: center;
         grid-area: data-user;
     }
 
-    main > form > textarea{
+    main > form > textarea {
         width: 100%;
         grid-area: textarea;
     }
 
-    main > form > div{
+    main > form > div {
         display: flex;
         flex-direction: column;
         align-items: center;
