@@ -215,7 +215,7 @@ main > section {
     .horizontal-card {
         width: unset;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr, auto;
+        grid-template-rows: 1fr auto;
         justify-items: center;
         gap: 0.5rem;
     }
