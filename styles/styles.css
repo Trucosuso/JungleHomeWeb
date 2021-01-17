@@ -60,13 +60,12 @@ p {
 }
 
 input:invalid {
-    border-color: red;
+    border-color: #E53935;
 }
 
 .checkbox{
     font-size: inherit;
     border: 1px solid #C5E1A5;
-    /* border-radius: 0.3em; */
 }
 
 fieldset{
@@ -167,6 +166,10 @@ nav {
 
 .border-green {
     border-color: #C5E1A5;
+}
+
+.hidden {
+    display: none;
 }
 
 .hidden-sm {

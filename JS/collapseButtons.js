@@ -28,10 +28,26 @@ $(function () {
                 $(this).addClass("hidden-md");
             });
         }
-        toggleIcon(this)
+        toggleIcon(this);
+    });
+
+    $("#plant-care > h1 > svg").on("click", function () {
+        let p = $("#plant-care > p");
+        if ($(p).css("display") == "none") {
+            $(p).slideDown("fast", function () {
+                $(this).css("display", "");
+                $(this).removeClass("hidden");
+            });
+        } else {
+            $(p).slideUp("fast", function () {
+                $(this).css("display", "");
+                $(this).addClass("hidden");
+            });
+        }
+        toggleIcon(this);
     });
 });
 
-function toggleIcon(burgerIcon) {
-    $(burgerIcon).children().toggle();
+function toggleIcon(icon) {
+    $(icon).children().toggle();
 }
