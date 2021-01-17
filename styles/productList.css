@@ -33,7 +33,8 @@ main > section {
 .product-image {
     width: 100%;
     margin: 0;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 /* Mobile */
